@@ -1,5 +1,53 @@
+:root{
+  --gray:#808181;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Kanit";
+  background-color: black;
 }
 
 /* Start coding here */
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container img{
+  width: 80%;
+  height: auto;
+  border: 5px solid white;
+  display: flex;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .ads-messege{
+  position:relative;
+  bottom:45px;
+  right: 310px;
+  font-size: 1.5rem;
+}
+
+.container .location{
+  position:relative;
+  bottom: 445px;
+  left: 433px;
+  background-color: var(--gray);
+  padding: 10px 40px;
+  font-size: 1.5rem;
+}
+
