@@ -1,1 +1,100 @@
-/* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.chatroom-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* พื้นหลังสีขาว */
+    padding: 20px;
+}
+
+.header {
+    color: white;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 60px; /* เพื่อให้ไม่ทับกับ header ที่ fixed */
+    display: flex;
+    flex-direction: column; /* ทำให้กล่องข้อความอยู่ในแนวตั้ง */
+}
+
+.message-box {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    max-width: 50%; /* กำหนดความกว้างของกล่อง */
+}
+
+.right {
+    height: 9%;
+    width: 20%; 
+    background-color: #32CD32; /* สีเขียว */
+    align-self: flex-end; /* ให้กล่องข้อความไปอยู่ทางขวา */
+    display: flex;
+    justify-content: flex-end; /* Align ข้อความให้ชิดขวา */
+}
+
+.left {
+    height: 9%;
+    width: 20%; /* ทำให้กล่องยืดเต็มความกว้าง */
+    background-color: #D3D3D3; /* สีเทา */
+    align-self: flex-start; /* ให้กล่องข้อความไปอยู่ทางซ้าย */
+    display: flex;
+}
+
+.message {
+    color: black;
+    font-size: 1rem;
+}
+
+button.close-btn {
+    background-color: hsl(0, 1%, 29%);
+    border-radius: 90%;
+    width: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.coding {
+    background-color: gray;
+    width: 100%;
+    height: 100%; 
+}
+
+.gray {
+    background-color: gray
+}
+
+.message1 {
+    width: 100%;
+    height: 100%;
+}
